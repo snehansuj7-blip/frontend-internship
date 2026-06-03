@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bug Report Form</title>
+</head>
+<body>
+
+    <h1>Bug Report Form</h1>
+
+    <form>
+
+        <label for="name">Reporter Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="date">Date of Report:</label>
+        <input type="date" id="date" name="date">
+        <br><br>
+
+        <label for="severity">Bug Severity:</label>
+        <select id="severity" name="severity">
+            <option value="">Select Severity</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+            <option value="critical">Critical</option>
+        </select>
+        <br><br>
+
+        <p>Operating System:</p>
+
+        <input type="radio" id=""windows" name="os" value="Windows">
+        <label for="windows">Windows</label>
+
+        <input type="radio" id="mac" name="os" value="Mac">
+        <label for="mac">Mac</label>
+
+        <input type="radio" id="linux" name="os" value="Linux">
+        <label for="linux">Linux</label>
+
+        <br><br>
+
+        <label for="steps">Steps to Reproduce:</label><br>
+        <textarea id="steps" name="steps" rows="5" cols="40" required></textarea>
+        <br><br>
+
+        <input type="checkbox" id="verify" name="verify" required>
+        <label for="verify">I have verified this isn't a duplicate</label>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
